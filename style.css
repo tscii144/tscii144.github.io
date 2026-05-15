@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'VG5000';
+ src: url(VG5000/VG5000-Regular.otf) format("opentype"), 
+        url(VG5000/VG5000-Regular_web.eot),     
+       url(VG5000/VG5000-Regular_web.woff2) format("woff2"), 
+       url(VG5000/VG5000-Regular_web.woff) format("woff"), 
+        url(VG5000/VG5000-Regular_web.otf) format("opentype");
+  
+}
+
+
+#imageprofil {
+    float: center;
+    border: 25px ridge LightBlue;
+    background-color: WhiteSmoke;
+    padding: 0px;
+    box-shadow: 2px 2px 12px #555;
+}
+
+body {
+  float : center;
+  font-family: 'VG5000';
+   font-weight: normal;
+   font-style: normal;    font-stretch: ultra-condensed;  
+    font-size: 1em;
+  
+}
+
+#boxdates {
+    float: left;
+    border: 25px ridge LightBlue;
+    background-color: WhiteSmoke;
+    padding: 2%;
+    width : 50%;
+    margin: 4%;
+    box-shadow: 2px 2px 12px #555;
+}
+
+#rectd {            /* cadre Ã©tudes et formations*/
+    text-align: left;
+    float: right;
+    border: 15px ridge black;
+    background-color: WhiteSmoke;
+    margin: 10% 20% 5% 0%;
+    padding: 8px;
+    box-shadow: 2px 2px 12px #555;
+
+}
+
+.boxartiste {
+    float: center;
+      border: 25px ridge grey;
+      background-color: WhiteSmoke;
+      margin: 5% 5% 5% 5%;
+    margin-top : 10%;
+    padding: 30px;
+    width: 50%;
+    box-shadow: 2px 2px 12px #555;
+}
+
+.boxartiste2 {
+    float: center;
+      border: 25px ridge RoyalBlue;
+      background-color: WhiteSmoke;
+      margin: 5% 5% 5% 5%;
+    margin-top : 40%;
+    padding: 30px;
+    box-shadow: 2px 2px 12px #555;
+}
+
+.artiste {
+    font-size: x-large;
+    color: Black;
+}
+
+.bio {
+  color: Black;
+  font-size: medium;
+  text-shadow: LightBlue 1px 0 10px;
+
+}
+
+.lien {
+  color: DarkBlue;
+  font-size: medium;
+  text-shadow: black 1px 0 10px;  
+}
+/* Fishes */
+
+.fish {
+  color: white;
+  font-size: medium;
+  text-shadow: black 1px 0 10px;  
+}
+  
+.fish:active {
+  font-size: small;
+  color: grey;
+      -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+  
+/* Image*/
+.container{
+  height:100%;
+  display: flex;
+  flex-wrap:wrap;
+  margin : 1% 1% 1% 1% ;
+  margin-right : 2%;
+}
+
+.card {
+  perspective : 100%;
+  height : 600px;
+  width : 1000px;
+  position: relative;
+  margin : 1% 1% 1% 1% ;
+}
+
+.card img{
+  width : 100%;
+}
+
+.card .back {
+  position: absolute;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  transition : transform 0.8s linear;
+}
+
+.card .front {
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition : transform 0.8s linear;
+}
+
+.card:hover .back {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .front {
+  transform: rotateY(0deg);
+}
+
+/* Le menu déroulant*/
+
+.dropbtn {                      /* Classe des dossiers principaux du menu déroulant*/
+    background-color: lightblue;      
+    color: darkblue;
+    padding: 15px;
+    font-size: 25px;
+    border: none;                   /*Informations relatives au menu déroulant*/
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    
+
+}
+
+.dropdown {                      /* classe du menu deroulant */
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {             /*classe des sous dossiers du menu déroulant*/
+    display: none;
+    position: absolute;
+    background-color: lightblue;                      /*Informations relatives aux sous dossiers du menu déroulant*/
+    min-width: 100px;
+    font-size: 25px;
+    box-shadow: 0px 8px 16px 0px DarkBlue;
+    
+}
+
+.dropdown-content a {                  
+    color: Darkblue;
+    padding: 12px 16px;                     /*Informations relatives aux liens des sous dossiers du menu déroulant*/
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+   text-shadow: -100px -20px lightgreen, 100px -20px darkgreen, 50px 20px green;
+    z-index: 7;  
+    background-color: Darkblue;
+
+} 
+
+                                                  /* Permettent un changement de couleur au passage de la souris sur les sous dossiers du menu déroulant */
+
+
+.dropdown:hover .dropdown-content {     
+    display: block
+    ;
+}
+
+.dropdown:hover .dropbtn {   
+   text-shadow: -100px -20px lightgreen, 100px -20px darkgreen, 50px 20px green;
+    z-index: 7;                                                /* Permettent un changement de couleur au passage de la souris sur le menu déroulant */
+    background-color: lightblue;
+
+} 
+
+
+.list {                           
+    top: 5%;
+    padding: 0px;
+    margin-left:65%;
+    margin-right:2%;
+    margin-top : 0%;
+    list-style-type: none;
+    display: flex;
+    width: 75px;
+    position: fixed;
+    z-index: 6;                     /*permet de passer le menu déroulant au premier plan */
+
+}                              /* Classes du menu deroulant qui est une liste*/
+
+
+.menu {
+    margin-left: 44%;
+    width: 175px;
+
+}
+
+.contact {
+    width: 75px;
+
+}
+
+    
+.dropbtn a:link {
+    color:black;
+    text-decoration: none;    /* Pour que les liens du menu deroulant n'apparaissent pas soulignés et bleus */
+    }
+
+.dropbtn a:visited {
+     color: black;            /*Pour que les liens du menu déroulant après visites restent identiques */
+     text-decoration: none;
+
+
+/* === FISH BACKGROUND === */
+.background-fishes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.75;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* Poisson style */
+.fish {
+  position: absolute;
+  white-space: nowrap;
+  animation: swim var(--speed, 20s) linear infinite;
+  top: var(--y, 50%);
+}
+
+/* Direction droite -> gauche */
+@keyframes swim {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+/* Poissons inversés (gauche -> droite) */
+.fish.reverse {
+  animation: swim-reverse var(--speed, 20s) linear infinite;
+}
+
+@keyframes swim-reverse {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+
+
+
+  
+    }    
+
