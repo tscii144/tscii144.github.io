@@ -1,11 +1,163 @@
 @font-face {
   font-family: 'VG5000';
- src: url(VG5000/VG5000-Regular.otf) format("opentype"), 
-        url(VG5000/VG5000-Regular_web.eot),     
-       url(VG5000/VG5000-Regular_web.woff2) format("woff2"), 
-       url(VG5000/VG5000-Regular_web.woff) format("woff"), 
-        url(VG5000/VG5000-Regular_web.otf) format("opentype");
-  
+ src: url(fonts/VG5000-Regular.otf) format("opentype"),
+        url(fonts/VG5000-Regular_web.eot),
+       url(fonts/VG5000-Regular_web.woff2) format("woff2"),
+       url(fonts/VG5000-Regular_web.woff) format("woff"),
+        url(fonts/VG5000-Regular_web.otf) format("opentype");
+
+}
+
+@font-face {
+    font-family: 'bianzhidai-Base';
+    src: url('bianzhidai-Base.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Brush';
+    src: url('bianzhidai-Brush.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Bubble';
+    src: url('bianzhidai-Bubble.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Cloud';
+    src: url('bianzhidai-Cloud.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Cube';
+    src: url('bianzhidai-Cube.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Messier';
+    src: url('bianzhidai-Messier.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Messy';
+    src: url('bianzhidai-Messy.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Pearl';
+    src: url('bianzhidai-Pearl.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Ring';
+    src: url('bianzhidai-Ring.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+    font-family: 'bianzhidai-Stitches';
+    src: url('bianzhidai-Stitches.woff') format('woff');
+    font-weight: normal; font-style: normal; font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'jgs7';
+    src: url('jgs7.woff2') format('woff2'),
+        url('jgs7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'jgs5';
+    src: url('jgs5.woff2') format('woff2'),
+        url('jgs5.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'jgs9';
+    src: url('jgs9.woff2') format('woff2'),
+        url('jgs9.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'FlorDeRuina-Semilla';
+  src: url('fonts/FlorDeRuina-Semilla.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'FlorDeRuina-Germen';
+  src: url('fonts/FlorDeRuina-Germen.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'FlorDeRuina-Flor';
+  src: url('fonts/FlorDeRuina-Flor.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'FlorDeRuina-Ruina';
+  src: url('fonts/FlorDeRuina-Ruina.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'FlorDeRuina-Fractura';
+  src: url('fonts/FlorDeRuina-Fractura.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+
+@keyframes border-bw {
+    0%   { border-color: white; }
+    50%  { border-color: black; }
+    100% { border-color: white; }
+}
+
+@keyframes fish-rtl {
+  0%   { transform: translateX(110vw) translateY(0px); }
+  25%  { transform: translateX(55vw)  translateY(30px); }
+  50%  { transform: translateX(0vw)   translateY(-30px); }
+  75%  { transform: translateX(-55vw) translateY(30px); }
+  100% { transform: translateX(-110vw) translateY(0px); }
+}
+
+@keyframes fish-ltr {
+  0%   { transform: translateX(-110vw) translateY(0px); }
+  25%  { transform: translateX(-55vw)  translateY(-30px); }
+  50%  { transform: translateX(0vw)    translateY(30px); }
+  75%  { transform: translateX(55vw)   translateY(-30px); }
+  100% { transform: translateX(110vw)  translateY(0px); }
+}
+
+@keyframes font-cycle {
+  0%,   4.99%    { font-family: "FlorDeRuina-Semilla",  serif; }
+  5%,   9.99%   { font-family: "jgs7",   serif; }
+  10%,  14.99%   { font-family: "FlorDeRuina-Flor",     serif; }
+  15%,  19.99%   { font-family: "FlorDeRuina-Ruina",    serif; }
+  20%,  24.99%   { font-family: "jgs5", serif; }
+  25%,  29.99%   { font-family: "FlorDeRuina-Germen", serif; }
+  30%,  34.99%   { font-family: "FlorDeRuina-Fractura", serif; }
+  35%,  39.99%   { font-family: "jgs9", serif; }
+  40%,  44.99%   { font-family: "VG5000", serif; }
+  50%,  54.99%   { font-family: "bianzhidai-Base", serif; }
+  55%,  59.99%   { font-family: "bianzhidai-Brush", serif; }
+  60%,  64.99%   { font-family: "bianzhidai-Bubble", serif; }
+  45%,  49.99%   { font-family: "bianzhidai-Cloud", serif; }
+  65%,  69.99%   { font-family: "bianzhidai-Cube", serif; }
+  70%,  74.99%   { font-family: "bianzhidai-Messier", serif; }
+  75%,  79.99%   { font-family: "bianzhidai-Messy", serif; }
+  80%,  84.99%   { font-family: "bianzhidai-Pearl", serif; }
+  85%,  89.99%   { font-family: "bianzhidai-Ring", serif; }
+  90%,  94.99%   { font-family: "bianzhidai-Stitches", serif; }
+  95%,  100%     { font-family: "VG5000", serif; }
+
+
 }
 
 
@@ -36,16 +188,38 @@ body {
     box-shadow: 2px 2px 12px #555;
 }
 
-#rectd {            /* cadre Ã©tudes et formations*/
-    text-align: left;
-    float: right;
+#rectd {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    z-index: 1;
+    margin: 0;
     border: 15px ridge black;
     background-color: WhiteSmoke;
-    margin: 10% 20% 5% 0%;
     padding: 8px;
     box-shadow: 2px 2px 12px #555;
-
+    animation: border-bw 3s ease-in-out infinite, fish-rtl 22s -2s linear infinite;
 }
+
+#rectd:nth-of-type(2)  { top:  2%; animation: border-bw 3s ease-in-out infinite, fish-rtl 22s  -2s linear infinite; }
+#rectd:nth-of-type(3)  { top: 55%; animation: border-bw 3s ease-in-out infinite, fish-ltr 15s  -7s linear infinite; }
+#rectd:nth-of-type(4)  { top: 20%; animation: border-bw 3s ease-in-out infinite, fish-rtl 28s -14s linear infinite; }
+#rectd:nth-of-type(5)  { top: 42%; animation: border-bw 3s ease-in-out infinite, fish-ltr 18s  -4s linear infinite; }
+#rectd:nth-of-type(6)  { top:  8%; animation: border-bw 3s ease-in-out infinite, fish-rtl 24s -20s linear infinite; }
+#rectd:nth-of-type(7)  { top: 35%; animation: border-bw 3s ease-in-out infinite, fish-ltr 20s -10s linear infinite; }
+#rectd:nth-of-type(8)  { top: 60%; animation: border-bw 3s ease-in-out infinite, fish-rtl 32s  -1s linear infinite; }
+#rectd:nth-of-type(9)  { top: 15%; animation: border-bw 3s ease-in-out infinite, fish-ltr 13s  -6s linear infinite; }
+#rectd:nth-of-type(10) { top: 48%; animation: border-bw 3s ease-in-out infinite, fish-rtl 17s -13s linear infinite; }
+#rectd:nth-of-type(11) { top: 28%; animation: border-bw 3s ease-in-out infinite, fish-ltr 26s  -3s linear infinite; }
+#rectd:nth-of-type(12) { top: 65%; animation: border-bw 3s ease-in-out infinite, fish-rtl 14s  -9s linear infinite; }
+#rectd:nth-of-type(13) { top:  5%; animation: border-bw 3s ease-in-out infinite, fish-ltr 30s  -5s linear infinite; }
+#rectd:nth-of-type(14) { top: 38%; animation: border-bw 3s ease-in-out infinite, fish-rtl 21s -17s linear infinite; }
+#rectd:nth-of-type(15) { top: 52%; animation: border-bw 3s ease-in-out infinite, fish-ltr 23s  -8s linear infinite; }
+#rectd:nth-of-type(16) { top: 12%; animation: border-bw 3s ease-in-out infinite, fish-rtl 16s -21s linear infinite; }
+#rectd:nth-of-type(17) { top: 45%; animation: border-bw 3s ease-in-out infinite, fish-ltr 27s -12s linear infinite; }
+#rectd:nth-of-type(18) { top: 25%; animation: border-bw 3s ease-in-out infinite, fish-rtl 19s -16s linear infinite; }
+#rectd:nth-of-type(19) { top: 68%; animation: border-bw 3s ease-in-out infinite, fish-ltr 11s  -3s linear infinite; }
+#rectd:nth-of-type(20) { top: 32%; animation: border-bw 3s ease-in-out infinite, fish-rtl 33s -11s linear infinite; }
 
 .boxartiste {
     float: center;
@@ -69,8 +243,15 @@ body {
 }
 
 .artiste {
-    font-size: x-large;
-    color: Black;
+  font-size: clamp(2rem, 8vw, 5rem);
+  color: Black;
+  font-weight: normal;
+  text-shadow:
+    4px  4px 0 #aaa,
+    8px  8px 0 #ccc,
+    12px 12px 0 #e5e5e5;
+  animation: font-cycle 20s linear infinite;
+  animation-delay: -7s;
 }
 
 .bio {
@@ -89,18 +270,25 @@ body {
 
 .fish {
   color: white;
-  font-size: medium;
-  text-shadow: black 1px 0 10px;  
+  font-weight: normal;
+  text-shadow:
+    4px  4px 0 rgba(0,0,0,0.7),
+    8px  8px 0 rgba(0,0,0,0.4),
+    12px 12px 0 rgba(0,0,0,0.2);
+  animation: font-cycle 20s linear infinite;
 }
-  
+
+/* Chaque poisson démarre à un point différent du cycle → fonts toutes différentes */
+marquee.fish:nth-of-type(1) { animation-delay:  0s; }
+marquee.fish:nth-of-type(2) { animation-delay: -4s; }
+marquee.fish:nth-of-type(3) { animation-delay: -8s; }
+marquee.fish:nth-of-type(4) { animation-delay: -12s; }
+marquee.fish:nth-of-type(5) { animation-delay: -16s; }
+marquee.fish:nth-of-type(6) { animation-delay: -2s; }
+
 .fish:active {
-  font-size: small;
   color: grey;
-      -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+  user-select: none;
 }
 
   
@@ -245,7 +433,7 @@ body {
 .dropbtn a:visited {
      color: black;            /*Pour que les liens du menu déroulant après visites restent identiques */
      text-decoration: none;
-
+}
 
 /* === FISH BACKGROUND === */
 .background-fishes {
@@ -293,10 +481,4 @@ body {
     transform: translateX(100vw);
   }
 }
-
-
-
-
-  
-    }    
 
